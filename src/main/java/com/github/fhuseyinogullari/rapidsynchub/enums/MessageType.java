@@ -1,4 +1,4 @@
-package com.github.fhuseyinogullari.rapidsynchub;
+package com.github.fhuseyinogullari.rapidsynchub.enums;
 
 public enum MessageType {
 

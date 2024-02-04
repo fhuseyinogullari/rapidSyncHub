@@ -1,5 +1,7 @@
-package com.github.fhuseyinogullari.rapidsynchub;
+package com.github.fhuseyinogullari.rapidsynchub.controller;
 
+import com.github.fhuseyinogullari.rapidsynchub.entity.ChatMessage;
+import com.github.fhuseyinogullari.rapidsynchub.service.ChatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;

@@ -1,5 +1,7 @@
-package com.github.fhuseyinogullari.rapidsynchub;
+package com.github.fhuseyinogullari.rapidsynchub.service;
 
+import com.github.fhuseyinogullari.rapidsynchub.dto.ChatSaveDAO;
+import com.github.fhuseyinogullari.rapidsynchub.entity.ChatMessage;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

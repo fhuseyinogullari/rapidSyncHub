@@ -1,5 +1,7 @@
-package com.github.fhuseyinogullari.rapidsynchub;
+package com.github.fhuseyinogullari.rapidsynchub.config;
 
+import com.github.fhuseyinogullari.rapidsynchub.enums.MessageType;
+import com.github.fhuseyinogullari.rapidsynchub.entity.ChatMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Component;

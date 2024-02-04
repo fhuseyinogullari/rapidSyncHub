@@ -1,4 +1,4 @@
-package com.github.fhuseyinogullari.rapidsynchub;
+package com.github.fhuseyinogullari.rapidsynchub.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

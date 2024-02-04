@@ -1,5 +1,6 @@
-package com.github.fhuseyinogullari.rapidsynchub;
+package com.github.fhuseyinogullari.rapidsynchub.entity;
 
+import com.github.fhuseyinogullari.rapidsynchub.enums.MessageType;
 import jakarta.persistence.*;
 
 @Entity

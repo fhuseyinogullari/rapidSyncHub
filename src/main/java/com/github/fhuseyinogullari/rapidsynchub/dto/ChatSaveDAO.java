@@ -1,5 +1,6 @@
-package com.github.fhuseyinogullari.rapidsynchub;
+package com.github.fhuseyinogullari.rapidsynchub.dto;
 
+import com.github.fhuseyinogullari.rapidsynchub.entity.ChatMessage;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
