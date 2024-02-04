@@ -12,7 +12,7 @@ import org.springframework.messaging.simp.stomp.StompHeaderAccessor;
 @Component
 public class WebSocketEventListener {
 
-    private final SimpMessageSendingOperations messagingTemplate;
+    private SimpMessageSendingOperations messagingTemplate;
 
     @Autowired
     public WebSocketEventListener(SimpMessageSendingOperations messagingTemplate) {
