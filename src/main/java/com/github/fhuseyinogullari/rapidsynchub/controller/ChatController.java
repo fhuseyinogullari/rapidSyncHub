@@ -1,12 +1,14 @@
 package com.github.fhuseyinogullari.rapidsynchub.controller;
 
 import com.github.fhuseyinogullari.rapidsynchub.entity.ChatMessage;
+import com.github.fhuseyinogullari.rapidsynchub.entity.User;
 import com.github.fhuseyinogullari.rapidsynchub.service.ChatMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
+import org.springframework.messaging.simp.annotation.SendToUser;
 import org.springframework.stereotype.Controller;
 
 @Controller
@@ -34,5 +36,11 @@ public class ChatController {
         chatMessage = chatService.save(chatMessage);
         System.out.println(chatMessage.toString());
         return chatMessage;
+    }
+
+    @MessageMapping("/greetings")
+    @SendToUser("/queue/greetings")
+    public String reply(@Payload ChatMessage message, User user) {
+        return  "Hello " + message.getContent();
     }
 }
